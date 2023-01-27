@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <!--  Loop through the database entries to display them in this table -->
+        {% for portfolioTable in portfolioTable %}
+            <tr>
+                <td>{{ portfolioTable["symbol"] }}</td>
+                <td>{{ portfolioTable["shares"] }}</td>
+                <td>{{ portfolioTable["price"] | usd}}</td>
+                <td>{{ portfolioTable["value"] | usd}}</td>
+
+            </tr>
+        {% endfor %}
+
+        <p>Account Balance: {{ accountBalance[0]['cash'] | usd}}</p>
+
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+h1{
+      text-align: center;
+      padding-top: 50px;
+      font-family: "Avantgarde";
+      color: #8f8e8d;
+      font-size: 50px;
+}
+
+h2{
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  font-family: "Avantgarde";
+  color: grey;
+  font-size: 50px;
+}
+
+body{
+      background-color: #f7efda;
+    }
+
+.bck-color{
+  background-color: #faf9f5;
+}
+
+#bio{
+  word-wrap: break-word;
+  font-size: 25px;
+}
+
+button{
+  background-color: white;
+}
+
+message{
+  font-size: 50px;
+  padding: 50px;
+  align: right;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  color: green;
+}
+
+.transparent{
+  color: transparent;
+}
+
+.row{
+  padding-top: 75px;
+  font-size: 25px;
+}
+
+.hover-color{
+  background-color: green;
+}
+
+.bordr{
+  border-style: hidden;
+}
